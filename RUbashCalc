@@ -1,0 +1,31 @@
+#!/bin/bash
+set -e
+echo "Добро пожаловать bashCalc!"
+echo "Этот скрипт создан SevralT"
+echo " "
+echo " "
+read -p "Введите первое число: " a
+read -p "Введите втрое число: " b
+
+echo "Выберите действие: "
+echo " 1. Сложение (+)"
+echo " 2. Вычитание (-)"
+echo " 3. Умножение (*)"
+echo " 4. Деление (/)"
+echo " 5. Exit (e)"
+read act
+
+case $act in
+1)out=`echo $a + $b | bc`
+;;
+2)out=`echo $a - $b | bc`
+;;
+3)out=`echo $a \* $b | bc`
+;;
+4)out=`echo "scale=2; $a / $b" | bc`
+;;
+5)out=`echo Exiting... | exit`
+;;
+esac
+echo "Your result: $out"
+echo "Thanks for using bashCalc!"
