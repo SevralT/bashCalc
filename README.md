@@ -9,4 +9,4 @@ Then, you need to allow starting this script by:
 `chmod +x bashCalc`
 
 Now, you can start:
-`./bashCalc
+`./bashCalc`
