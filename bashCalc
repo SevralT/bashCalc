@@ -1,0 +1,31 @@
+#!/bin/bash
+set -e
+echo "Welcome to the bashCalc!"
+echo "This script created by SevralT"
+echo " "
+echo " "
+read -p "Enter first number: " a
+read -p "Enter second number: " b
+
+echo "Choose an action: "
+echo " 1. Addition"
+echo " 2. Subtraction"
+echo " 3. Multiplication"
+echo " 4. Division"
+echo " 5. Exit"
+read act
+
+case $act in
+1)out=`echo $a + $b | bc`
+;;
+2)out=`echo $a - $b | bc`
+;;
+3)out=`echo $a \* $b | bc`
+;;
+4)out=`echo "scale=2; $a / $b" | bc`
+;;
+5)out=`echo Exiting... | exit`
+;;
+esac
+echo "Your result: $out"
+echo "Thanks for using bashCalc!"
