@@ -2,13 +2,13 @@
 Welcome to the bashCalc repo!
 
 ## Usage
-[Русская инструкция](https://git.sevralt.ml/SevralT/bashCalc/README.ru.md)
+[Русская инструкция](https://git.sevralt.ml/SevralT/bashCalc/src/branch/master/README.ru.md)
 
 First, you need to clone this repo:
 `git clone https://git.sevralt.ml/SevralT/bashCalc.git`
 
 Then, you need to allow starting this script by:
-`chmod +x bashCalc`
+`chmod +x RUbashCalc bashCalc`
 
 Now, you can start:
-`./bashCalc`
+`./bashCalc` or russian version `./RUbashCalc`
