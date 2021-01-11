@@ -26,6 +26,15 @@ case $act in
 ;;
 5)out=`echo Exiting... | exit`
 ;;
++)out=`echo $a + $b | bc`
+;;
+-)out=`echo $a - $b | bc`
+;;
+*)out=`echo $a \* $b | bc`
+;;
+/)out=`echo "scale=2; $a / $b" | bc`
+;;
+e)out=`echo Exiting... | exit`
 esac
 echo "Your result: $out"
 echo "Thanks for using bashCalc!"
