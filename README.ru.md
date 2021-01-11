@@ -1,5 +1,5 @@
 # bashCalc
-Welcome to the bashCalc repo!
+Добро пожаловать в репозиторий bashCalc!
 
 ## Usage
 [English Instruction](https://git.sevralt.ml/SevralT/bashCalc/src/branch/master/README.md)
