@@ -36,5 +36,5 @@ case $act in
 ;;
 e)out=`echo Exiting... | exit`
 esac
-echo "Your result: $out"
-echo "Thanks for using bashCalc!"
+echo "Ваш результат: $out"
+echo "Спасибо за использование bashCalc!"
